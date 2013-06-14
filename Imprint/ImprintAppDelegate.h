@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ImprintViewController;
+
 @interface ImprintAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) ImprintViewController *viewController;
 
 @end

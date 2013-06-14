@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImprintViewController : UIViewController
+@interface ImprintViewController : UICollectionViewController<UICollectionViewDataSource,
+                                                              UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, assign) NSInteger habitCount;
 
 @end

@@ -7,12 +7,21 @@
 //
 
 #import "ImprintAppDelegate.h"
+#import "ImprintViewController.h"
+#import "HorizontalView.h"
 
-@implementation ImprintAppDelegate
+@implementation ImprintAppDelegate{
+    NSMutableDictionary *plistDict;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    plistDict = [self getPListAsDict];
+    
+    self.viewController = [[ImprintViewController alloc] initWithCollectionViewLayout:[[HorizontalView alloc] init]];
+    self.window.rootViewController = self.viewController;
+
     return YES;
 }
 							
@@ -41,6 +50,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self writeDictAsPList:plistDict];
 }
+
+-(NSMutableDictionary*)getPListAsDict
+{
+    NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"HabitList" ofType:@"plist"];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:pListPath];
+    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionaryWithDictionary:dictionary];
+    return mutableDict;
+}
+
+-(void)writeDictAsPList:(NSMutableDictionary*) mutableDict
+{
+    NSString *pListPath = [[NSBundle mainBundle] pathForResource:@"HabitList" ofType:@"plist"];
+    [mutableDict writeToFile:pListPath atomically:YES];
+}
+
+-(void)writeValueToDict:(id) value withKey:(NSString *)key
+{
+    [plistDict setValue:value forKey:key];
+}
+
 
 @end
