@@ -14,7 +14,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.habitCount = 4;
+    self.habitCount = 20;
     [self.collectionView registerClass:[HabitCell class] forCellWithReuseIdentifier:@"GENERIC_ID"];
     [self.collectionView reloadData];
     self.collectionView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
@@ -39,16 +39,17 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSUInteger array[[indexPath length]];
+//    NSLog(@"Hello %d", indexPath.row);
+//    return CGSizeMake(150.0f, 150.0f);
+//    NSUInteger array[[indexPath length]];
+//    [indexPath getIndexes: array];
+//    printf("row is : %d", indexPath.row);
     
-    if ([indexPath indexAtPosition:0] == 0) {
+    if ((indexPath.row % 2) == 0) {
         return CGSizeMake(100.0f, 100.0f);
     }
-    else if ([indexPath indexAtPosition:0] == 1) {
-        return CGSizeMake(150.0f, 150.0f);
-    }
     else {
-        return CGSizeMake(50.0f, 50.0f);
+        return CGSizeMake(150.0f, 150.0f);
     }
 }
 

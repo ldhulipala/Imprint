@@ -15,7 +15,6 @@
     self = [super initWithFrame:frame];
     if (self) { 
         // Initialization code
-        self.contentView.layer.cornerRadius = 35.0;
         self.contentView.layer.borderWidth = 1.0f;
         self.contentView.layer.borderColor = [UIColor blackColor].CGColor;
         self.contentView.backgroundColor = [UIColor underPageBackgroundColor];
