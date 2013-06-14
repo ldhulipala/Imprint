@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57DC9247176AF61E003094FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DC9246176AF61E003094FE /* QuartzCore.framework */; };
+		57DC9249176AF667003094FE /* HorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DC9243176AE776003094FE /* HorizontalView.m */; };
+		57DC924B176AF667003094FE /* HabitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DC9245176AE897003094FE /* HabitCell.m */; };
 		97BD2CEB176AD21E00B0B35B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BD2CEA176AD21E00B0B35B /* Foundation.framework */; };
 		97BD2CED176AD21E00B0B35B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BD2CEC176AD21E00B0B35B /* CoreGraphics.framework */; };
 		97BD2CEF176AD21E00B0B35B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BD2CEE176AD21E00B0B35B /* UIKit.framework */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577EECC0176AD6D30077B766 /* HabitList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HabitList.plist; sourceTree = "<group>"; };
+		57DC9242176AE776003094FE /* HorizontalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalView.h; sourceTree = "<group>"; };
+		57DC9243176AE776003094FE /* HorizontalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalView.m; sourceTree = "<group>"; };
+		57DC9244176AE897003094FE /* HabitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HabitCell.h; sourceTree = "<group>"; };
+		57DC9245176AE897003094FE /* HabitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabitCell.m; sourceTree = "<group>"; };
+		57DC9246176AF61E003094FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		97BD2CE7176AD21E00B0B35B /* Imprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BD2CEA176AD21E00B0B35B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97BD2CEC176AD21E00B0B35B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DC9247176AF61E003094FE /* QuartzCore.framework in Frameworks */,
 				97BD2CED176AD21E00B0B35B /* CoreGraphics.framework in Frameworks */,
 				97BD2CEF176AD21E00B0B35B /* UIKit.framework in Frameworks */,
 				97BD2CEB176AD21E00B0B35B /* Foundation.framework in Frameworks */,
@@ -82,6 +92,7 @@
 		97BD2CDE176AD21E00B0B35B = {
 			isa = PBXGroup;
 			children = (
+				577EECC0176AD6D30077B766 /* HabitList.plist */,
 				97BD2CF0176AD21E00B0B35B /* Imprint */,
 				97BD2D0F176AD21E00B0B35B /* ImprintTests */,
 				97BD2CE9176AD21E00B0B35B /* Frameworks */,
@@ -101,6 +112,7 @@
 		97BD2CE9176AD21E00B0B35B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57DC9246176AF61E003094FE /* QuartzCore.framework */,
 				97BD2CEA176AD21E00B0B35B /* Foundation.framework */,
 				97BD2CEC176AD21E00B0B35B /* CoreGraphics.framework */,
 				97BD2CEE176AD21E00B0B35B /* UIKit.framework */,
@@ -117,6 +129,10 @@
 				97BD2CFC176AD21E00B0B35B /* Main.storyboard */,
 				97BD2CFF176AD21E00B0B35B /* ImprintViewController.h */,
 				97BD2D00176AD21E00B0B35B /* ImprintViewController.m */,
+				57DC9242176AE776003094FE /* HorizontalView.h */,
+				57DC9243176AE776003094FE /* HorizontalView.m */,
+				57DC9244176AE897003094FE /* HabitCell.h */,
+				57DC9245176AE897003094FE /* HabitCell.m */,
 				97BD2D02176AD21E00B0B35B /* Images.xcassets */,
 				97BD2CF1176AD21E00B0B35B /* Supporting Files */,
 			);
@@ -250,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DC9249176AF667003094FE /* HorizontalView.m in Sources */,
+				57DC924B176AF667003094FE /* HabitCell.m in Sources */,
 				97BD2CFB176AD21E00B0B35B /* ImprintAppDelegate.m in Sources */,
 				97BD2D01176AD21E00B0B35B /* ImprintViewController.m in Sources */,
 				97BD2CF7176AD21E00B0B35B /* main.m in Sources */,
@@ -455,6 +473,7 @@
 				97BD2D1B176AD21E00B0B35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97BD2D1C176AD21E00B0B35B /* Build configuration list for PBXNativeTarget "ImprintTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +482,7 @@
 				97BD2D1E176AD21E00B0B35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

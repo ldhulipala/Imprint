@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>01604B3E-708D-471E-8E62-DB385847642D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Imprint</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3364CB88-3DCE-4E5A-839E-CA6A82932C70</key>
+		<string>ssh://github.com/laxmandhulipala/Imprint.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Imprint.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3364CB88-3DCE-4E5A-839E-CA6A82932C70</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/laxmandhulipala/Imprint.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3364CB88-3DCE-4E5A-839E-CA6A82932C70</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3364CB88-3DCE-4E5A-839E-CA6A82932C70</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Imprint</string>
+		</dict>
+	</array>
+</dict>
+</plist>
